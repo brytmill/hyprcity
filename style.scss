@@ -1,0 +1,85 @@
+body {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 2.5em;
+}
+
+section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+blockquote {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	max-width: 1200px;
+	margin: 60px auto;
+	border-left: none;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+footer {
+	text-align: left;
+	background: #333;
+	color: #fff;
+	padding-top: 40px;
+	.copy {
+		text-align: center;
+		font-size: 0.5em;
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+}
+
+#intro {
+    background: transparent;
+	background-size: 100%;
+	min-height: 900px;
+	color: #fff;
+	text-align: center;
+	.navbar-default {
+		background: none;
+		border: none;
+		a {
+			color: #fff;
+		}
+	}
+	.splash {
+		padding-top: 300px;
+		text-shadow: 0 1px 10px #000;
+		h1 {
+			text-transform: uppercase;
+		}
+	}
+}
+
+#experience {
+	h2 {
+		color: #999;
+		font-weight: 300;
+		text-transform: uppercase;
+		span {
+			display: block;
+			font-size: 2em;
+			color: #333;
+		}
+	}
+}
+
+#logos {
+	background: #333;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	img {
+		margin: auto;
+	}
+}
