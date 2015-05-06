@@ -14,12 +14,14 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/animate.css">
+
+	<link rel="stylesheet" href="assets/style.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 
 <header id="intro" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="images/sf-skyline.jpg">
 
@@ -34,19 +36,16 @@
 	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="#">
-			<img alt="Brand" src="images/hyprcity-logo">
+			<img alt="Brand" src="images/hyprcity-logo.png">
 		  </a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
-	        <li><a href="#">Link</a></li>
+	        <li><a href="#solution">Our Solution</a></li>
+	        <li><a href="#experience">Experience</a></li>
+	        <li><a href="#get-started">Get Started</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -85,23 +84,25 @@
 	</div>
 </section>
 
-<blockquote>HyprCity is one of the largest Crowd-investing platforms in the world. With projects around the globe worth over $850 million, $300 million in equity raised from the crowd, and over 6,200 investors.</blockquote>
+<div class="quote">
+	<p class="wow slideInLeft">HyprCity is one of the largest Crowd-investing platforms in the world. With projects around the globe worth over $850 million, $300 million in equity raised from the crowd, and over 6,200 investors.</p>
+</div>
 
 <section class="container-fluid" id="experience">
 	<div class="container">
 		<h1>Experience</h1>
-		<div class="row">
+		<div class="row hideme">
 			<div class="col-md-4">
-				<h2><span>$800</span>Million</h2>
-				<p>We have raised over $300 million in equity from the crowd for our projects globally.</p>
-			</div>
-			<div class="col-md-4">
-				<h2><span>$800</span>Million</h2>
+				<h2>$<span id="second-value">800</span>Million</h2>
 				<p>Our projects are funded and supported by a growing community of over 6,200 investors.</p>
 			</div>
 			<div class="col-md-4">
-				<h2><span>$800</span>Million</h2>
+				<h2>$<span id="third-value">800</span>Million</h2>
 				<p>Our portfolio of global projects has an estimated market value of over $850 million.</p>
+			</div>
+			<div class="col-md-4">
+				<h2>$<span id="first-value">800</span>Million</h2>
+				<p>We have raised over $300 million in equity from the crowd for our projects globally.</p>
 			</div>
 		</div>
 	</div>
@@ -134,7 +135,7 @@
 
 <section id="get-started">
 	<h1>Get Started Today!</h1>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	<p>If you are a developer and are interested in collaborating with us on your project, give us a call or contact us for more information.</p>
 	<button class="btn btn-primary">Get Started</button>
 </section>
 
@@ -195,6 +196,68 @@
 </footer>
 
 <script src="assets/parallax.min.js"></script>
+
+<script>
+	function animateValue(id, start, end, duration) {
+	    var range = end - start;
+	    var current = start;
+	    var increment = end > start? 1 : -1;
+	    var stepTime = Math.abs(Math.floor(duration / range));
+	    var obj = document.getElementById(id);
+	    var timer = setInterval(function() {
+	        current += increment;
+	        obj.innerHTML = current;
+	        if (current == end) {
+	            clearInterval(timer);
+	        }
+	    }, stepTime);
+	}
+	$(document).ready(function() {
+		    
+	    /* Every time the window is scrolled ... */
+	    $(window).scroll( function(){
+	    
+	        /* Check the location of each desired element */
+	        $('.hideme').each( function(i){
+	            
+	            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            
+	            /* If the object is completely visible in the window, fade it it */
+	            if( bottom_of_window > bottom_of_object ){
+					animateValue("first-value", 0, 800, 1000);
+					animateValue("second-value", 0, 25, 1000);
+					animateValue("third-value", 0, 450, 1000);
+				}
+	            
+	        }); 
+	    
+	    });
+	    
+	});
+</script>
+
+<script src="assets/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
 
 </body>
 </html>
