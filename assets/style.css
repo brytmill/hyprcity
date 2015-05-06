@@ -1,0 +1,127 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.75em;
+  font-weight: 300;
+  text-align: center;
+  position: relative; }
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-bottom: 20px; }
+
+p {
+  margin-bottom: 20px; }
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+footer {
+  text-align: left;
+  background: #333;
+  color: #fff;
+  padding-top: 40px; }
+  footer .copy {
+    text-align: center;
+    font-size: 0.5em;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 0;
+  transition: all .2s ease; }
+
+.btn-default {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff; }
+  .btn-default:hover, .btn-default:focus {
+    border-color: #fe7201;
+    color: #fe7201;
+    background: none; }
+
+.btn-primary {
+  background: #fe7201;
+  border-color: #fe7201; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: #fe8e34;
+    border-color: #fe8e34; }
+
+#intro {
+  background: transparent;
+  background-size: 100%;
+  min-height: 900px;
+  color: #fff;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0; }
+  #intro .navbar-default {
+    background: rgba(0, 0, 0, 0.8);
+    border: none; }
+    #intro .navbar-default a {
+      color: #fff; }
+    #intro .navbar-default .navbar-brand {
+      padding: 0; }
+      #intro .navbar-default .navbar-brand img {
+        max-height: 50px; }
+    #intro .navbar-default li a {
+      transition: all .3s ease; }
+    #intro .navbar-default .active a {
+      background: none;
+      color: #fe7201;
+      border-bottom: 2px solid #fe7201; }
+    #intro .navbar-default .navbar-toggle {
+      border: none;
+      background: none !important; }
+      #intro .navbar-default .navbar-toggle .icon-bar {
+        background: #fe7201;
+        width: 30px;
+        height: 4px; }
+  #intro .splash {
+    padding-top: 304px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-shadow: 0 1px 10px #000; }
+    #intro .splash h1 {
+      text-transform: uppercase;
+      margin-bottom: 40px; }
+    #intro .splash p {
+      margin-bottom: 40px; }
+
+.quote {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  max-width: 1200px;
+  margin: 0px auto;
+  border-left: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+
+#experience h2 {
+  color: #999;
+  font-weight: 300;
+  text-transform: uppercase; }
+  #experience h2 span {
+    font-size: 2em;
+    color: #333; }
+
+#logos {
+  background: #333;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 40px; }
+  #logos img {
+    margin: auto; }
+
+@media screen and (min-width: 767px) {
+  .navbar-default {
+    position: fixed;
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,160 @@
+$color-primary: #fe7201;
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 1.75em;
+	font-weight: 300;
+	text-align: center;
+	position: relative;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+footer {
+	text-align: left;
+	background: #333;
+	color: #fff;
+	padding-top: 40px;
+	.copy {
+		text-align: center;
+		font-size: 0.5em;
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+	padding: 10px 25px;
+	border-radius: 0;
+	transition: all .2s ease;
+}
+
+.btn-default {
+	background: none;
+	border: 1px solid #fff;
+	color: #fff;
+	&:hover, &:focus {
+		border-color: $color-primary;
+		color: $color-primary;
+		background: none;
+	}
+}
+
+.btn-primary {
+	background: $color-primary;
+	border-color: $color-primary;
+	&:hover, &:focus {
+		background: lighten($color-primary, 10%);
+		border-color: lighten($color-primary, 10%);
+	}
+}
+
+
+#intro {
+    background: transparent;
+	background-size: 100%;
+	min-height: 900px;
+	color: #fff;
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+	.navbar-default {
+		background: rgba(0,0,0,0.8);
+		border: none;
+		a {
+			color: #fff;
+		}
+		.navbar-brand {
+			padding: 0;
+			img {
+				max-height: 50px;
+			}
+		}
+		li a {
+			transition: all .3s ease;
+		}
+		.active a {
+			background: none;
+			color: $color-primary;
+			border-bottom: 2px solid $color-primary;
+		}
+		.navbar-toggle {
+			border: none;
+			background: none !important;
+			.icon-bar {
+				background: $color-primary;
+				width: 30px;
+				height: 4px;
+			}
+		}
+	}
+	.splash {
+		padding-top: 304px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-shadow: 0 1px 10px #000;
+		h1 {
+			text-transform: uppercase;
+			margin-bottom: 40px;
+		}
+		p {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.quote {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	max-width: 1200px;
+	margin: 0px auto;
+	border-left: none;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#experience {
+	h2 {
+		color: #999;
+		font-weight: 300;
+		text-transform: uppercase;
+		span {
+			font-size: 2em;
+			color: #333;
+		}
+	}
+}
+
+#logos {
+	background: #333;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: 40px;
+	img {
+		margin: auto;
+	}
+}
+
+@media screen and ( min-width: 767px ) {
+	.navbar-default {
+		position: fixed;
+		width: 100%;
+	}
+}
