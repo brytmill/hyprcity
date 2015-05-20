@@ -77,7 +77,8 @@ section {
       max-height: 50px; }
   .navbar-default .navbar-right li a {
     transition: all .3s ease;
-    color: #fff; }
+    color: #fff;
+    font-weight: bold; }
     .navbar-default .navbar-right li a:hover {
       color: #f2f2f2; }
   .navbar-default .active a {
@@ -107,7 +108,8 @@ section {
     text-shadow: 0 1px 10px #000; }
     #intro .splash h1 {
       text-transform: uppercase;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      font-weight: bold; }
     #intro .splash p {
       margin-bottom: 40px; }
 

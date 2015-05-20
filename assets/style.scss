@@ -97,6 +97,7 @@ section {
 		li a {
 			transition: all .3s ease;
 			color: #fff;
+			font-weight: bold;
 			&:hover {
 				color: #f2f2f2;
 			}
@@ -134,6 +135,7 @@ section {
 		h1 {
 			text-transform: uppercase;
 			margin-bottom: 40px;
+			font-weight: bold;
 		}
 		p {
 			margin-bottom: 40px;
