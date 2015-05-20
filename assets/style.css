@@ -17,12 +17,12 @@ section {
   padding-top: 80px;
   padding-bottom: 80px; }
 
-footer {
+#footer {
   text-align: left;
   background: #333;
   color: #fff;
   padding-top: 40px; }
-  footer .copy {
+  #footer .copy {
     text-align: center;
     font-size: 0.5em;
     margin-top: 40px;
@@ -99,9 +99,7 @@ footer {
   font-size: 1.5em;
   max-width: 1200px;
   margin: 0px auto;
-  border-left: none;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd; }
+  border-left: none; }
 
 #experience h2 {
   color: #999;
