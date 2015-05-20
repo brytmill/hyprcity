@@ -76,6 +76,47 @@ section {
 	}
 }
 
+.navbar-default {
+	background: transparent;
+	border: none;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	border-radius: 0;
+	transition: all .3s ease;
+	a {
+		color: #fff;
+	}
+	.navbar-brand {
+		padding: 0;
+		img {
+			max-height: 50px;
+		}
+	}
+	.navbar-right {
+		li a {
+			transition: all .3s ease;
+			color: #fff;
+			&:hover {
+				color: #f2f2f2;
+			}
+		}
+	}
+	.active a {
+		background: none;
+		color: $color-primary;
+		border-bottom: 2px solid $color-primary;
+	}
+	.navbar-toggle {
+		border: none;
+		background: none !important;
+		.icon-bar {
+			background: $color-primary;
+			width: 30px;
+			height: 4px;
+		}
+	}
+}
 
 #intro {
     background: transparent;
@@ -85,37 +126,6 @@ section {
 	text-align: center;
 	padding-left: 0;
 	padding-right: 0;
-	.navbar-default {
-		background: rgba(0,0,0,0.8);
-		border: none;
-		z-index: 9;
-		a {
-			color: #fff;
-		}
-		.navbar-brand {
-			padding: 0;
-			img {
-				max-height: 50px;
-			}
-		}
-		li a {
-			transition: all .3s ease;
-		}
-		.active a {
-			background: none;
-			color: $color-primary;
-			border-bottom: 2px solid $color-primary;
-		}
-		.navbar-toggle {
-			border: none;
-			background: none !important;
-			.icon-bar {
-				background: $color-primary;
-				width: 30px;
-				height: 4px;
-			}
-		}
-	}
 	.splash {
 		padding-top: 304px;
 		padding-left: 15px;

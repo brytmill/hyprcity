@@ -61,6 +61,37 @@ section {
     background: #fe8e34;
     border-color: #fe8e34; }
 
+.navbar-default {
+  background: transparent;
+  border: none;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  transition: all .3s ease; }
+  .navbar-default a {
+    color: #fff; }
+  .navbar-default .navbar-brand {
+    padding: 0; }
+    .navbar-default .navbar-brand img {
+      max-height: 50px; }
+  .navbar-default .navbar-right li a {
+    transition: all .3s ease;
+    color: #fff; }
+    .navbar-default .navbar-right li a:hover {
+      color: #f2f2f2; }
+  .navbar-default .active a {
+    background: none;
+    color: #fe7201;
+    border-bottom: 2px solid #fe7201; }
+  .navbar-default .navbar-toggle {
+    border: none;
+    background: none !important; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background: #fe7201;
+      width: 30px;
+      height: 4px; }
+
 #intro {
   background: transparent;
   background-size: 100%;
@@ -69,29 +100,6 @@ section {
   text-align: center;
   padding-left: 0;
   padding-right: 0; }
-  #intro .navbar-default {
-    background: rgba(0, 0, 0, 0.8);
-    border: none;
-    z-index: 9; }
-    #intro .navbar-default a {
-      color: #fff; }
-    #intro .navbar-default .navbar-brand {
-      padding: 0; }
-      #intro .navbar-default .navbar-brand img {
-        max-height: 50px; }
-    #intro .navbar-default li a {
-      transition: all .3s ease; }
-    #intro .navbar-default .active a {
-      background: none;
-      color: #fe7201;
-      border-bottom: 2px solid #fe7201; }
-    #intro .navbar-default .navbar-toggle {
-      border: none;
-      background: none !important; }
-      #intro .navbar-default .navbar-toggle .icon-bar {
-        background: #fe7201;
-        width: 30px;
-        height: 4px; }
   #intro .splash {
     padding-top: 304px;
     padding-left: 15px;

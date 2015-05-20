@@ -25,8 +25,7 @@
 </head>
 <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 
-<header id="intro" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="images/sf-skyline.jpg">
-
+<header class="container-fluid">
 	<nav class="navbar navbar-default">
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,14 +52,19 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
+</header>
+
+<div id="intro" class="container-fluid parallax-window" data-parallax="scroll" data-image-src="images/sf-skyline.jpg">
 
 	<div class="splash">
-		<h1>Real Estate Investing For Mainstreet</h1>
+		<h1 class="startchange">Real Estate Investing For Mainstreet</h1>
 		<p>Invest in commercial real estate for as little as $1,000</p>
 		<a href="#solution"><button class="btn btn-default">Learn More</button></a> <a href="mailto:hyprcity@gmail.com"><button class="btn btn-primary">Get Started</button></a>
 	</div>
 
-</header>
+</div>
+
+
 
 <section class="container-fluid" id="solution">
 	<div class="container">
@@ -254,6 +258,27 @@
 	      }
 	    }
 	  });
+	});
+</script>
+
+<script>
+	/* navbar change */
+	$(document).ready(function(){       
+	   var scroll_start = 0;
+	   var startchange = $('.startchange');
+	   var offset = startchange.offset();
+	    if (startchange.length){
+	   $(document).scroll(function() { 
+	      scroll_start = $(this).scrollTop();
+	      if(scroll_start > offset.top - 80) {
+	          $(".navbar-default").css('background-color', 'rgba(255,255,255,.8)');
+	          $('.navbar-default li a').css('color', '#333333');
+	       } else {
+	          $('.navbar-default').css('background-color', 'transparent');
+	          $('.navbar-default li a').css('color', '#ffffff');
+	       }
+	   });
+	    }
 	});
 </script>
 
