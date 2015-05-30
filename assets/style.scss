@@ -1,4 +1,7 @@
-$color-primary: #fe7201;
+@import '_extraBootstrap';
+@import '_slick';
+
+$orange: #fe7201;
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -9,7 +12,7 @@ body {
 }
 
 h1 {
-	font-weight: 100;
+	font-weight: 700;
 	font-size: 2.5em;
 	margin-bottom: 20px;
 }
@@ -61,18 +64,18 @@ section {
 	border: 1px solid #fff;
 	color: #fff;
 	&:hover, &:focus {
-		border-color: $color-primary;
-		color: $color-primary;
+		border-color: $orange;
+		color: $orange;
 		background: none;
 	}
 }
 
 .btn-primary {
-	background: $color-primary;
-	border-color: $color-primary;
+	background: $orange;
+	border-color: $orange;
 	&:hover, &:focus {
-		background: lighten($color-primary, 10%);
-		border-color: lighten($color-primary, 10%);
+		background: lighten($orange, 10%);
+		border-color: lighten($orange, 10%);
 	}
 }
 
@@ -105,14 +108,14 @@ section {
 	}
 	.active a {
 		background: none;
-		color: $color-primary;
-		border-bottom: 2px solid $color-primary;
+		color: $orange;
+		border-bottom: 2px solid $orange;
 	}
 	.navbar-toggle {
 		border: none;
 		background: none !important;
 		.icon-bar {
-			background: $color-primary;
+			background: $orange;
 			width: 30px;
 			height: 4px;
 		}
@@ -156,13 +159,43 @@ section {
 	}
 }
 
+#investors, #entrepreneurs {
+	h1 {
+		margin-bottom: 60px;
+		span {
+			color: $orange;
+		}
+	}
+	h2 {
+		color: $orange;
+		margin-top: 20px;
+	}
+	i {
+		color: $orange;
+		border: 3px solid $orange;
+		border-radius: 50%;
+		padding: 22px 23px;
+		background: #f2f2f2;
+		font-size: 2em;
+	}
+	.row {
+		margin-bottom: 40px;
+	}
+}
+
+.slick {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: #f2f2f2;
+}
+
 #quote {
 	padding-top: 80px;
 	padding-bottom: 80px;
 	font-weight: 300;
 	text-transform: uppercase;
 	margin: 0px auto;
-	background: #f2f2f2;
+	background: #ddd;
 	blockquote {
 		max-width: 1200px;
 		font-size: 1.5em;
