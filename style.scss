@@ -2,7 +2,6 @@ body {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-size: 2em;
 	font-weight: 300;
-	text-align: center;
 }
 
 h1 {
@@ -44,7 +43,6 @@ footer {
 	background-size: 100%;
 	min-height: 900px;
 	color: #fff;
-	text-align: center;
 	.navbar-default {
 		background: none;
 		border: none;
@@ -53,7 +51,7 @@ footer {
 		}
 	}
 	.splash {
-		padding-top: 300px;
+		padding-top: 200px;
 		text-shadow: 0 1px 10px #000;
 		h1 {
 			text-transform: uppercase;

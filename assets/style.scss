@@ -7,7 +7,6 @@ body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 1.75em;
 	font-weight: 300;
-	text-align: center;
 	position: relative;
 }
 
@@ -100,7 +99,6 @@ section {
 		li a {
 			transition: all .3s ease;
 			color: #fff;
-			font-weight: bold;
 			&:hover {
 				color: #f2f2f2;
 			}
@@ -125,13 +123,12 @@ section {
 #intro {
     background: transparent;
 	background-size: 100%;
-	min-height: 900px;
+	min-height: 700px;
 	color: #fff;
-	text-align: center;
 	padding-left: 0;
 	padding-right: 0;
 	.splash {
-		padding-top: 304px;
+		padding-top: 150px;
 		padding-left: 15px;
 		padding-right: 15px;
 		text-shadow: 0 1px 10px #000;
