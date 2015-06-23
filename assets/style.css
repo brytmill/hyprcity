@@ -163,7 +163,9 @@ section {
   top: 0;
   left: 0;
   border-radius: 0;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  padding-top: 10px;
+  padding-bottom: 4px; }
   .navbar-default a {
     color: #fff; }
   .navbar-default .navbar-brand {
@@ -172,7 +174,9 @@ section {
       max-height: 50px; }
   .navbar-default .navbar-right li a {
     transition: all .3s ease;
-    color: #fff; }
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 0.8em; }
     .navbar-default .navbar-right li a:hover {
       color: #f2f2f2; }
   .navbar-default .active a {
@@ -186,6 +190,14 @@ section {
       background: #fe7201;
       width: 30px;
       height: 4px; }
+  .navbar-default .header-cta {
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #999;
+    margin-right: 10px;
+    transition: border-color .2s ease; }
+    .navbar-default .header-cta:hover {
+      border-color: #fff; }
 
 #intro {
   background: transparent;
@@ -205,6 +217,31 @@ section {
       font-weight: bold; }
     #intro .splash p {
       margin-bottom: 40px; }
+
+.previous-funded .col-md-3 {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2; }
+  .previous-funded .col-md-3 img {
+    opacity: 0.8;
+    transition: opacity .2s ease; }
+  .previous-funded .col-md-3:hover > img {
+    opacity: 1; }
+  .previous-funded .col-md-3 .previous-funded-info {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .previous-funded .col-md-3 .previous-funded-info h2 {
+      color: #fe7201; }
+    .previous-funded .col-md-3 .previous-funded-info h2, .previous-funded .col-md-3 .previous-funded-info h4 {
+      text-align: center; }
+    .previous-funded .col-md-3 .previous-funded-info .left {
+      font-weight: bold;
+      color: #ddd; }
+    .previous-funded .col-md-3 .previous-funded-info .right {
+      text-align: right; }
+    .previous-funded .col-md-3 .previous-funded-info p {
+      margin-bottom: 10px; }
 
 #solution .row {
   padding: 80px 0; }
@@ -237,16 +274,18 @@ section {
   background: #f2f2f2; }
 
 #quote {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0px auto;
-  background: #ddd; }
+  margin: 0px auto; }
   #quote blockquote {
-    max-width: 1200px;
+    max-width: 800px;
     font-size: 1.5em;
-    border-left: none; }
+    border-left: none;
+    color: #fff; }
+    #quote blockquote footer {
+      color: #ddd; }
 
 #experience h2 {
   color: #999;
