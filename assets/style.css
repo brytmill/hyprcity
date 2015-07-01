@@ -308,22 +308,22 @@ section {
   .dads-bbq #page-head {
     background: bottom center url("http://luxebeatmag.com/wp-content/uploads/2014/03/1394997_19792541-sxc.jpg");
     color: #fff; }
-  .dads-bbq #page-content #invest-widget {
+  .dads-bbq #page-content #invest-widget .inner {
     background: #333;
     padding: 20px;
     border-radius: 5px;
     text-align: center; }
-    .dads-bbq #page-content #invest-widget .invest-details-box {
+    .dads-bbq #page-content #invest-widget .inner .invest-details-box {
       background: #fff;
       padding: 10px; }
-    .dads-bbq #page-content #invest-widget table {
+    .dads-bbq #page-content #invest-widget .inner table {
       color: #fff;
       font-size: 0.75em;
       border-color: #777; }
-      .dads-bbq #page-content #invest-widget table .text-left {
+      .dads-bbq #page-content #invest-widget .inner table .text-left {
         color: #777;
         font-weight: bold; }
-  .dads-bbq #page-content .invest-btn-container {
+  .dads-bbq #page-content #invest-widget .invest-btn-container {
     margin: 20px auto;
     text-align: center; }
 

@@ -283,27 +283,29 @@ section {
 	}
 	#page-content {
 		#invest-widget {
-			background: #333;
-			padding: 20px;
-			border-radius: 5px;
-			text-align: center;
-			.invest-details-box {
-				background: #fff;
-				padding: 10px;
-			}
-			table {
-				color: #fff;
-				font-size: 0.75em;
-				border-color: #777;
-				.text-left {
-					color: #777;
-					font-weight: bold;
+			.inner {
+				background: #333;
+				padding: 20px;
+				border-radius: 5px;
+				text-align: center;
+				.invest-details-box {
+					background: #fff;
+					padding: 10px;
+				}
+				table {
+					color: #fff;
+					font-size: 0.75em;
+					border-color: #777;
+					.text-left {
+						color: #777;
+						font-weight: bold;
+					}
 				}
 			}
-		}
-		.invest-btn-container {
-			margin: 20px auto;
-			text-align: center;
+			.invest-btn-container {
+				margin: 20px auto;
+				text-align: center;
+			}
 		}
 	}
 }
