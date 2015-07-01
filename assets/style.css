@@ -303,6 +303,30 @@ section {
   #logos img {
     margin: auto; }
 
+.dads-bbq {
+  background: #f2f2f2; }
+  .dads-bbq #page-head {
+    background: bottom center url("http://www.exposingtruth.com/wp-content/uploads/2014/03/bbqpork.jpg");
+    color: #fff; }
+  .dads-bbq #page-content #invest-widget {
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; }
+    .dads-bbq #page-content #invest-widget .invest-details-box {
+      background: #fff;
+      padding: 10px; }
+    .dads-bbq #page-content #invest-widget table {
+      color: #fff;
+      font-size: 0.75em;
+      border-color: #777; }
+      .dads-bbq #page-content #invest-widget table .text-left {
+        color: #777;
+        font-weight: bold; }
+  .dads-bbq #page-content .invest-btn-container {
+    margin: 20px auto;
+    text-align: center; }
+
 @media screen and (min-width: 767px) {
   .navbar-default {
     position: fixed;
