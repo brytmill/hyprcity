@@ -308,6 +308,12 @@ section {
 			}
 		}
 	}
+	.key-figures-list {
+		margin-left: 40px;
+		li {
+			list-style-image: url('../images/check.jpg');
+		}
+	}
 }
 
 @media screen and ( min-width: 767px ) {
