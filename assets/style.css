@@ -243,13 +243,18 @@ section {
     .previous-funded .col-md-3 .previous-funded-info p {
       margin-bottom: 10px; }
 
-#solution .row {
-  padding: 80px 0; }
-  #solution .row .col-md-6 {
-    text-align: left; }
+#solution .row .col-md-6 {
+  text-align: left; }
 #solution .part {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2; }
+#solution .bsn-ex .col-md-4 {
+  overflow: hidden; }
+#solution .bsn-ex img {
+  transition: all .3s ease;
+  transform: scale(1); }
+  #solution .bsn-ex img:hover {
+    transform: scale(1.25); }
 
 #investors h1, #entrepreneurs h1 {
   margin-bottom: 60px; }
